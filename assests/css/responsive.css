@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+}
