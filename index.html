@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food is life. Good food makes a better life">
+    <meta name="keywords" content="food, recipes, ingredients, homemade, simple">
+    <meta name="author" content="James Healy">
+    <meta property="og:title" content="The Culinary Notebook">
+    <meta property="og:description" content="Food is life. Good food makes a better life">
+    <meta property="og:image" content="assets/images/hero-image.jpg">
+    <meta property="og:url" content="http://www.example.com">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>The Culinary Notebook</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/recipes.css">
 </head>
+
 <body>
 
     <header>
-        <h1>The Culinary Notebook</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="recipes/breakfast.html">Breakfast</a></li>
-                <li><a href="recipes/lunch.html">Lunch</a></li>
-                <li><a href="recipes/dinner.html">Dinner</a></li>
-                <li><a href="recipes/desserts.html">Desserts</a></li>
-                <li><a href="techniques.html">Techniques</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <a href="index.html" aria-label="Home">
+            <h1 id="logo">The Culinary Notebook</h1>
+        </a>
+        <nav role="navigation" aria-label="Main menu">
+            <ul id="menu">
+                <li>
+                    <a href="index.html" class="active" aria-current="page" aria-label="Go to homepage">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" aria-label="Learn more about us">About Us</a>
+                </li>
+                <li>
+                    <a href="recipes.html" aria-label="Browse our recipes">Recipes</a>
+                </li>
+                <li>
+                    <a href="gallery.html" aria-label="Explore our gallery">Gallery</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <img src="images/foodiesfeed.com_exotic-spices.jpg" alt="An array of spices">
-            <div class="hero-text">
-                <h2>Welcome to The Culinary Notebook</h2>
-                <p>Discover delicious recipes and cooking techniques to enhance your culinary skills!</p>
-            </div>
-        </section>
+        <!-- Main content could go here -->
     </main>
 
     <footer>
@@ -40,4 +48,5 @@
     </footer>
 
 </body>
+
 </html>

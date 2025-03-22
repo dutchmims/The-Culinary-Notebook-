@@ -1,5 +1,8 @@
+
 /* General Styles */
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,26 +11,54 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f5f2;
-    color: #333;
+    background-image: url('../images/foodiesfeed.com_exotic-spices.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;  /* Set default text color to white */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    justify-content: space-between;  /* Footer at bottom */
+    font-size: 16px; /* Set a base font size */
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Ensure headings and paragraphs scale relative to the base font size */
+h1, h2, h3, p {
+    color: white;  /* Ensure all text is white */
 }
 
 /* Header */
 header {
-    background: #c0392b;
-    color: white;
+    background: #fff;
+    color: #333;  /* Keep header text color dark */
     text-align: center;
     padding: 20px 0;
 }
 
-/* Navigation */
+#logo {
+    color: #333;  /* Keep logo text color dark */
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Top Navigation */
+nav {
+    background-color: #fff;
+    border-top: 2px solid #ccc;
+}
+
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background: #e74c3c;
     padding: 10px 0;
 }
 
@@ -36,17 +67,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    color: #333;  /* Keep page link text color dark */
+    font-size: 1.125rem; /* Use rem for consistency */
     padding: 10px;
     display: inline-block;
     transition: background 0.3s ease, border-radius 0.3s ease;
 }
 
-nav ul li a:hover {
-    background: #b03a2e;
-    border-radius: 5px;
+/* Active Link Styling for Recipes */
+nav ul li a.active {
+    color: #e74c3c;  /* Highlight active link in red */
+    font-weight: bold;
 }
 
 /* Main Content */
@@ -62,6 +93,7 @@ main {
     width: 100%;
     height: 400px;
     overflow: hidden;
+    margin-bottom: 20px;  /* Add spacing below the hero section */
 }
 
 .hero img {
@@ -78,7 +110,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: white;  /* Ensure text in hero section is white */
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -96,11 +128,13 @@ main {
 
 /* Footer */
 footer {
-    background: #222;
-    color: white;
+    background: #fff;
+    color: white;  /* Ensure footer text is white */
     text-align: center;
     padding: 10px;
     width: 100%;
+    position: relative;
+    margin-top: auto;
 }
 
 /* Contact Form */
@@ -117,6 +151,7 @@ label {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
+    color: white;  /* Change label text color to white */
 }
 
 input, textarea {
@@ -133,7 +168,7 @@ button {
     width: 100%;
     padding: 10px;
     background: #e74c3c;
-    color: white;
+    color: white;  /* Ensure button text is white */
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -141,23 +176,86 @@ button {
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
+button:focus {
+    outline: none;
+}
+
 button:hover {
     background: #c0392b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Techniques Page Styles */
-.technique {
-    max-width: 700px;
-    margin: 30px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+/* Recipes Page Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.technique img {
+ul li {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: white;  /* Ensure list item text is white */
+}
+
+ul li a {
+    color: #c0392b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #b03a2e;
+}
+
+/* Recipe Grid Layout */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Recipe Card Styling */
+.recipe-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe Card Image Styling */
+.recipe-card img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 200px;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card img:hover {
+    transform: scale(1.05);
+}
+
+/* Recipe Title Styling */
+.recipe h3 {
+    color: #c0392b;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Recipe Image Styling */
+.recipe img {
     width: 100%;
     max-height: 300px;
     object-fit: cover;
@@ -165,7 +263,70 @@ button:hover {
     margin: 15px 0;
 }
 
-.technique h3 {
-    color: #c0392b;
-    margin-bottom: 10px;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-text p {
+        font-size: 1em;
+    }
+
+    .recipe-card {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .recipe-grid {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .recipe {
+        margin: 20px;
+    }
+
+    .recipe h3 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .recipe img {
+        max-height: 250px;
+    }
+
+    .recipe-card img {
+        max-height: 180px;
+    }
+
+    .recipe:hover {
+        transform: none;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .hero img {
+        object-fit: cover;
+        height: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/* Large Screen Recipe Grid (more than 1200px width) */
+@media (min-width: 1200px) {
+    .recipe-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

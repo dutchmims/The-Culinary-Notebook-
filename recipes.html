@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food is life. Good food makes a better life">
+    <meta name="keywords" content="food, recipes, ingredients, homemade, simple">
+    <meta name="author" content="James Healy">
+    <meta property="og:title" content="The Culinary Notebook">
+    <meta property="og:description" content="Food is life. Good food makes a better life">
+    <meta property="og:image" content="assets/images/hero-image.jpg">
+    <meta property="og:url" content="http://www.example.com">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Recipes - The Culinary Notebook</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" aria-label="Home">
+            <h1 id="logo">The Culinary Notebook</h1>
+        </a>
+        <nav role="navigation" aria-label="Main menu">
+            <ul id="menu">
+                <li>
+                    <a href="index.html" aria-label="Go to homepage">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" aria-label="Learn more about us">About Us</a>
+                </li>
+                <li>
+                    <a href="recipes.html" class="active" aria-current="page" aria-label="Browse our recipes">Recipes</a>
+                </li>
+                <li>
+                    <a href="gallery.html" aria-label="Explore our gallery">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="recipes-section" aria-labelledby="recipes-section">
+            <h2>Our Recipes</h2>
+            <p>Find the perfect recipe for every occasion and meal.</p>
+
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <a href="recipes/breakfast.html" aria-label="View breakfast recipes" class="card-link">
+                        <img src="assets/images/breakfast.jpg" alt="Delicious breakfast dishes">
+                        <h3>Breakfast</h3>
+                    </a>
+                </div>
+
+                <div class="recipe-card">
+                    <a href="recipes/lunch.html" aria-label="View lunch recipes" class="card-link">
+                        <img src="assets/images/lunch.jpg" alt="Delicious lunch dishes">
+                        <h3>Lunch</h3>
+                    </a>
+                </div>
+
+                <div class="recipe-card">
+                    <a href="recipes/dinner.html" aria-label="View dinner recipes" class="card-link">
+                        <img src="assets/images/dinner.jpg" alt="Delicious dinner dishes">
+                        <h3>Dinner</h3>
+                    </a>
+                </div>
+
+                <div class="recipe-card">
+                    <a href="recipes/desserts.html" aria-label="View dessert recipes" class="card-link">
+                        <img src="assets/images/desserts.jpg" alt="Delicious dessert dishes">
+                        <h3>Desserts</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Culinary Notebook. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
