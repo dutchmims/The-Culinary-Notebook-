@@ -61,19 +61,14 @@ The **Culinary Notebook** is an interactive website featuring a variety of recip
 assets/css: Contains the stylesheets for the website.
 assets/images: Contains all images used across the website.
 HTML files: Contain the content and structure for each webpage (index.html, about.html, etc.).
-
-### Deployment
-
+Deployment
 The site was deployed to GitHub Pages. The steps taken are as follows:
-
 Log in to Github.
 In the repository The Culinary Notebook, navigate to the settings tab from the top menu.
 In settings, select "Pages."
 From the source section, select the Master Branch and save.
 The page will refresh, and you will then see the URL of your website.
-
-### Credits
-
+Credits
 James Healy: Developer and designer of The Culinary Notebook.
 Pixabay: Free high-quality food images used in this project:
 These images are provided by Pixabay, a free source of high-quality food photography, which has been used with permission for educational and non-commercial purposes.
