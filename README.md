@@ -1,8 +1,6 @@
-# The-Culinary-Notebook-
-Food and Recipe site
+# The Culinary Notebook - Food and Recipe Site
 
-
-# The Culinary Notebook
+## The Culinary Notebook
 
 Welcome to **The Culinary Notebook**! This website is dedicated to sharing culinary inspiration, delicious recipes, and cooking tips. Explore the world of food and enhance your cooking skills with our easy-to-follow recipes and gorgeous food galleries.
 
@@ -34,7 +32,7 @@ The **Culinary Notebook** is an interactive website featuring a variety of recip
 - **Gallery Page** to showcase beautiful food photography and culinary creations.
 - **About Us Page** sharing the mission and vision of The Culinary Notebook.
 - **Responsive Design** that adapts seamlessly across devices (desktop, tablet, mobile).
-  
+
 ---
 
 ## Installation
@@ -84,27 +82,27 @@ Alternatively, you can run a local server using Visual Studio Code and the **Liv
 assets/css: Contains the stylesheets for the website.
 assets/images: Contains all images used across the website.
 HTML files: Contain the content and structure for each webpage (index.html, about.html, etc.).
+
 Technologies Used
 HTML5: Markup language used for structure.
 CSS3: Styling language for layout and visual design.
 Flexbox & Grid: Used for responsive layout and design.
 Responsive Design: The site is fully responsive, using media queries for different screen sizes.
+
 Credits
 James Healy: Developer and designer of The Culinary Notebook.
-FoodiesFeed: Free high-quality food images used in this project.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+FoodiesFeed: Free high-quality food images used in this project:
+FoodiesFeed - Dish 1
+FoodiesFeed - Dish 2
+These images are provided by FoodiesFeed, a free source of high-quality food photography, which has been used with permission for educational and non-commercial purposes.
 
 Thank you for visiting The Culinary Notebook. We hope our content inspires you to create something amazing in your kitchen!
 
-
-### Instructions for this README:
-1. **Project Description**: Describes the site’s purpose.
-2. **Features**: Lists key features of your site.
-3. **Installation**: Explains how to set up and view the site locally.
-4. **Usage**: Describes how to use the website.
-5. **File Structure**: Displays the directory structure of the project.
-6. **Technologies Used**: Lists the technologies you've used for the website.
-7. **Credits**: Acknowledges contributors and external resources.
-8. **License**: Information about the licensing for the project (if applicable).
-
+Instructions for this README:
+Project Description: Describes the site’s purpose.
+Features: Lists key features of your site.
+Installation: Explains how to set up and view the site locally.
+Usage: Describes how to use the website.
+File Structure: Displays the directory structure of the project.
+Technologies Used: Lists the technologies you've used for the website.
+Credits: Acknowledges contributors and external resources.
