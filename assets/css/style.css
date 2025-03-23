@@ -1,5 +1,3 @@
-
-/* General Styles */
 *,
 *::before,
 *::after {
@@ -13,45 +11,40 @@ body {
     background-color: #f8f5f2;
     background-image: url('../images/foodiesfeed.com_exotic-spices.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white;  /* Set default text color to white */
+    color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    position: relative;
-    justify-content: space-between;  /* Footer at bottom */
-    font-size: 16px; /* Set a base font size */
+    justify-content: space-between;
+    font-size: 16px;
 }
 
-/* Remove underline from all links */
 a {
     text-decoration: none;
 }
 
-/* Ensure headings and paragraphs scale relative to the base font size */
 h1, h2, h3, p {
-    color: white;  /* Ensure all text is white */
+    color: white;
 }
 
-/* Header */
 header {
-    background: #fff;
-    color: #333;  /* Keep header text color dark */
+    background: white;
+    color: black;
     text-align: center;
     padding: 20px 0;
 }
 
 #logo {
-    color: #333;  /* Keep logo text color dark */
+    color: black;
     font-size: 2.5em;
     font-weight: bold;
 }
 
-/* Top Navigation */
 nav {
-    background-color: #fff;
+    background-color: white;
     border-top: 2px solid #ccc;
 }
 
@@ -67,41 +60,55 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #333;  /* Keep page link text color dark */
-    font-size: 1.125rem; /* Use rem for consistency */
+    color: black;
+    font-size: 1.125rem;
     padding: 10px;
     display: inline-block;
     transition: background 0.3s ease, border-radius 0.3s ease;
 }
 
-/* Active Link Styling for Recipes */
 nav ul li a.active {
-    color: #e74c3c;  /* Highlight active link in red */
+    color: #e74c3c;
     font-weight: bold;
 }
 
-/* Main Content */
 main {
     flex: 1;
     text-align: center;
     padding: 40px;
+    min-height: calc(100vh - 160px); 
 }
 
-/* Hero Section */
+footer {
+    background: white;  /* White background */
+    color: black;       /* Black text */
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    border-top: 2px solid #ccc;
+    z-index: 100;
+    height: 100px;
+}
+
+footer p {
+    color: black; /* Black text color */
+}
+
 .hero {
     position: relative;
     width: 100%;
     height: 400px;
     overflow: hidden;
-    margin-bottom: 20px;  /* Add spacing below the hero section */
+    margin-bottom: 20px;
 }
 
 .hero img {
     width: 100%;
     height: 100%;
-    min-height: 400px;
     object-fit: cover;
-    object-position: center;
+    min-height: 400px;
 }
 
 .hero-text {
@@ -110,7 +117,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0.6);
-    color: white;  /* Ensure text in hero section is white */
+    color: white;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -126,22 +133,10 @@ main {
     margin-top: 10px;
 }
 
-/* Footer */
-footer {
-    background: #fff;
-    color: white;  /* Ensure footer text is white */
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    position: relative;
-    margin-top: auto;
-}
-
-/* Contact Form */
 form {
     max-width: 500px;
     margin: 20px auto;
-    background: #fff;
+    background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -151,7 +146,7 @@ label {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
-    color: white;  /* Change label text color to white */
+    color: black;
 }
 
 input, textarea {
@@ -162,13 +157,12 @@ input, textarea {
     border-radius: 5px;
 }
 
-/* Button Styles */
 button {
     display: block;
     width: 100%;
     padding: 10px;
     background: #e74c3c;
-    color: white;  /* Ensure button text is white */
+    color: white;
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -176,38 +170,11 @@ button {
     transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-button:focus {
-    outline: none;
-}
-
 button:hover {
     background: #c0392b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Recipes Page Styles */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 15px 0;
-    font-size: 1.2em;
-    color: white;  /* Ensure list item text is white */
-}
-
-ul li a {
-    color: #c0392b;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-ul li a:hover {
-    color: #b03a2e;
-}
-
-/* Recipe Grid Layout */
 .recipe-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -217,7 +184,6 @@ ul li a:hover {
     margin: 0 auto;
 }
 
-/* Recipe Card Styling */
 .recipe-card {
     background: white;
     padding: 15px;
@@ -233,7 +199,6 @@ ul li a:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Recipe Card Image Styling */
 .recipe-card img {
     width: 100%;
     border-radius: 10px;
@@ -246,24 +211,6 @@ ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Recipe Title Styling */
-.recipe h3 {
-    color: #c0392b;
-    margin-bottom: 10px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-}
-
-/* Recipe Image Styling */
-.recipe img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
-    margin: 15px 0;
-}
-
-/* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -278,44 +225,8 @@ ul li a:hover {
         font-size: 1em;
     }
 
-    .recipe-card {
-        padding: 10px;
-        box-shadow: none;
-    }
-
     .recipe-grid {
         grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .recipe {
-        margin: 20px;
-    }
-
-    .recipe h3 {
-        font-size: 24px;
-        line-height: 1.4;
-    }
-
-    .recipe img {
-        max-height: 250px;
-    }
-
-    .recipe-card img {
-        max-height: 180px;
-    }
-
-    .recipe:hover {
-        transform: none;
-    }
-
-    .hero {
-        height: 250px;
-    }
-
-    .hero img {
-        object-fit: cover;
-        height: 100%;
     }
 
     footer {
@@ -324,7 +235,6 @@ ul li a:hover {
     }
 }
 
-/* Large Screen Recipe Grid (more than 1200px width) */
 @media (min-width: 1200px) {
     .recipe-grid {
         grid-template-columns: repeat(4, 1fr);
