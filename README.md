@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Welcome to **The Culinary Notebook**! This website is dedicated to sharing culinary inspiration, delicious recipes, and cooking tips. Explore the world of food and enhance your cooking skills with our easy to follow recipes and gorgeous food galleries.
+Welcome to **The Culinary Notebook**! This website is dedicated to sharing culinary inspiration, delicious recipes, and cooking tips. Explore the world of food and enhance your cooking skills with our easy-to-follow recipes and gorgeous food galleries.
 
 ---
 
@@ -62,21 +62,11 @@ assets/css: Contains the stylesheets for the website.
 assets/images: Contains all images used across the website.
 HTML files: Contain the content and structure for each webpage (index.html, about.html, etc.).
 Deployment
-The site was deployed to GitHub Pages. The steps taken are as follows:
-Log in to Github.
-In the repository The Culinary Notebook, navigate to the settings tab from the top menu.
-In settings, select "Pages."
-From the source section, select the Master Branch and save.
-The page will refresh, and you will then see the URL of your website.
+The site is deployed to GitHub Pages. You can access it at the following URL:
+
+The Culinary Notebook - Food and Recipe Site
+
 Credits
 James Healy: Developer and designer of The Culinary Notebook.
-Pixabay: Free high-quality food images used in this project:
+Pixabay: Free high-quality food images used in this project.
 These images are provided by Pixabay, a free source of high-quality food photography, which has been used with permission for educational and non-commercial purposes.
-
-Instructions for this README:
-Project Description: Describes the site’s purpose.
-Features: Lists key features of your site.
-Technologies Used: Lists the technologies you've used for the website.
-File Structure: Displays the directory structure of the project.
-Deployment: Explains the steps to deploy the website.
-Credits: Acknowledges contributors and external resources.
