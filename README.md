@@ -1,21 +1,20 @@
 # The Culinary Notebook - Food and Recipe Site
 
-## The Culinary Notebook
+## Project Overview
 
-Welcome to **The Culinary Notebook**! This website is dedicated to sharing culinary inspiration, delicious recipes, and cooking tips. Explore the world of food and enhance your cooking skills with our easy-to-follow recipes and gorgeous food galleries.
+Welcome to **The Culinary Notebook**! This website is dedicated to sharing culinary inspiration, delicious recipes, and cooking tips. Explore the world of food and enhance your cooking skills with our easy to follow recipes and gorgeous food galleries.
 
 ---
 
 ## Table of Contents
 
-- [Project Description](#project-description)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [File Structure](#file-structure)
-- [Technologies Used](#technologies-used)
-- [Credits](#credits)
-- [License](#license)
+1. [Project Description](#project-description)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [File Structure](#file-structure)
+5. [Deployment](#deployment)
+6. [Credits](#credits)
+7. [License](#license)
 
 ---
 
@@ -35,31 +34,12 @@ The **Culinary Notebook** is an interactive website featuring a variety of recip
 
 ---
 
-## Installation
+## Technologies Used
 
-To view the website locally, follow these steps:
-
-1. **Clone the repository** to your local machine using the following command:
-    ```bash
-    git clone https://github.com/yourusername/culinary-notebook.git
-    ```
-2. **Navigate to the project folder**:
-    ```bash
-    cd culinary-notebook
-    ```
-3. **Open the `index.html` file** in your browser to view the website locally:
-    - Double-click `index.html` or right-click and choose **Open with** > your browser.
-
-Alternatively, you can run a local server using Visual Studio Code and the **Live Server** extension or use a Python HTTP server, as detailed earlier.
-
----
-
-## Usage
-
-1. **Explore the homepage** to learn about The Culinary Notebook and navigate through different sections.
-2. **Browse the recipe collection** and click on any recipe to view the details.
-3. **Enjoy the gallery** of culinary masterpieces that will inspire you to create beautiful dishes.
-4. **Learn about the team** in the **About Us** section and discover more about the site's mission.
+- **HTML5**: Markup language used for structure.
+- **CSS3**: Styling language for layout and visual design.
+- **Flexbox & Grid**: Used for responsive layout and design.
+- **Responsive Design**: The site is fully responsive, using media queries for different screen sizes.
 
 ---
 
@@ -70,7 +50,6 @@ Alternatively, you can run a local server using Visual Studio Code and the **Liv
 ├── assets/
 │   ├── css/
 │   │   ├── style.css
-│   │   └── responsive.css
 │   ├── images/
 │   │   ├── dish1.jpg
 │   │   └── dish2.jpg
@@ -83,26 +62,26 @@ assets/css: Contains the stylesheets for the website.
 assets/images: Contains all images used across the website.
 HTML files: Contain the content and structure for each webpage (index.html, about.html, etc.).
 
-Technologies Used
-HTML5: Markup language used for structure.
-CSS3: Styling language for layout and visual design.
-Flexbox & Grid: Used for responsive layout and design.
-Responsive Design: The site is fully responsive, using media queries for different screen sizes.
+### Deployment
 
-Credits
+The site was deployed to GitHub Pages. The steps taken are as follows:
+
+Log in to Github.
+In the repository The Culinary Notebook, navigate to the settings tab from the top menu.
+In settings, select "Pages."
+From the source section, select the Master Branch and save.
+The page will refresh, and you will then see the URL of your website.
+
+### Credits
+
 James Healy: Developer and designer of The Culinary Notebook.
-FoodiesFeed: Free high-quality food images used in this project:
-FoodiesFeed - Dish 1
-FoodiesFeed - Dish 2
-These images are provided by FoodiesFeed, a free source of high-quality food photography, which has been used with permission for educational and non-commercial purposes.
-
-Thank you for visiting The Culinary Notebook. We hope our content inspires you to create something amazing in your kitchen!
+Pixabay: Free high-quality food images used in this project:
+These images are provided by Pixabay, a free source of high-quality food photography, which has been used with permission for educational and non-commercial purposes.
 
 Instructions for this README:
 Project Description: Describes the site’s purpose.
 Features: Lists key features of your site.
-Installation: Explains how to set up and view the site locally.
-Usage: Describes how to use the website.
-File Structure: Displays the directory structure of the project.
 Technologies Used: Lists the technologies you've used for the website.
+File Structure: Displays the directory structure of the project.
+Deployment: Explains the steps to deploy the website.
 Credits: Acknowledges contributors and external resources.
